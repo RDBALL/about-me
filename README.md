@@ -10,8 +10,6 @@ The goal of this project is to have a site that will serve as a brief overview o
 
 ### Links and Resources
 
-### Links and resources
-
 Background image source
 Font used [Google Font Comfortaa](https://fonts.google.com/specimen/Comfortaa)
 Background image [Freepik Vectors](https://www.freepik.com/vectors/polygon-shape)
@@ -19,6 +17,4 @@ Presets for box-shadow CSS [box-shadow presets](https://getcssscan.com/css-box-s
 
 ### Reflections and Comments
 
-Consider including the answers to your daily journal and submission questions here
-
-This is also a good place to reflect on the tools and resources used and learned.
+What I should have done from the start is to get back to the basics and begin with a wireframe design.  At the moment there is not a lot of thought put into the overall design other than just meeting the requirements of the assignment.
