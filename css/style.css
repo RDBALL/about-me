@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100vh;
 }
 
 h1 {
@@ -46,4 +47,17 @@ main {
 
 p {
   padding: 1% 1% 1% 1%;
+}
+
+.footer {
+  color: white;
+  font-family: Comfortaa;
+  margin-top: 25px;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: max-content;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
