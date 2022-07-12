@@ -8,13 +8,14 @@ console.log('The user\'s name is ' + userName);
 // First quiz question 
 // Question prompt will continue to be called until 'yes' is entered by the user
 let movieQuestion = prompt('Hi ' + userName + ' , first question. Is Con Air a cinematic masterpiece?');
-  while (movieQuestion.toLowerCase() !== 'yes'){
-    alert('Come on ' + userName + ' put the bunny back in the box and select the right answer');
-    movieQuestion = prompt('Hi ' + userName + ' , first question. Is Con Air a cinematic masterpiece?');
-  } if (movieQuestion.toLowerCase() === 'yes');
-    alert('I completely agree ' + userName + ' Con Air is fantastic!');
+while (movieQuestion.toLowerCase() !== 'yes'){
+  alert('Come on ' + userName + ' put the bunny back in the box and select the right answer');
+  movieQuestion = prompt('Hi ' + userName + ' , first question. Is Con Air a cinematic masterpiece?');
+} if (movieQuestion.toLowerCase() === 'yes');
+alert('I completely agree ' + userName + ' Con Air is fantastic!');
 
-
+// Second quiz question
+// Question prompt will continue to be called until 'no' is entered by the user
 
 // alert('Hi, ' +userName+ '! It\'s nice to meet you!');      
 // console.log('The user\'s name is ' + userName)
