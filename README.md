@@ -11,6 +11,7 @@ The goal of this project is to have a site that will serve as a brief overview o
 ### Links and Resources
 
 ### Links and resources
+
 Background image source
 Font used [Google Font Comfortaa](https://fonts.google.com/specimen/Comfortaa)
 Background image [Freepik Vectors](https://www.freepik.com/vectors/polygon-shape)
