@@ -11,7 +11,8 @@ The goal of this project is to have a site that will serve as a brief overview o
 ### Links and Resources
 
 ### Links and resources
-
+Background image source
+[Vecteezy](https://www.vecteezy.com/free-vector/abstract-background)
 ### Reflections and Comments
 
 Consider including the answers to your daily journal and submission questions here

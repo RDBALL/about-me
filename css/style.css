@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Poppins:wght@300&display=swap');
+
+body {
+  background-image:url('/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  display: block;
+  min-width: 500px; 
+  font-size: 3vh;
+  font-weight: 700;
+  color: rgb(39, 23, 187);
+  font-family: Comfortaa;
+  background-color: rgba(60, 153, 196, 0.8);
+  border-radius: 25px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1% 2% 1% 2%;
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: black;
+  border: 5px solid black;
+}
+
+main {
+  font-family: Comfortaa;
+  font-size: 18px;
+  color: rgb(241, 205, 181);
+  font-weight: 500;
+  display: block;
+  padding: 2% 2% 2% 2%;
+  background-color: rgba(176, 16, 224, 0.9);
+  border-radius: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: black;
+  border: 5px solid black;
+}
+
+p {
+  padding: 1% 1% 1% 1%;
+}
