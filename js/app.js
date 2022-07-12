@@ -1,10 +1,12 @@
 'use strict'
 
+// Asking the user to enter their name in a prompt
 let userName = prompt('What name do you like to be called?');
 alert('Hi, ' +userName+ '! It\'s nice to meet you!');      
 console.log('The user\'s name is ' + userName);
 
-
+// First quiz question 
+// Question prompt will continue to be called until 'yes' is entered by the user
 let movieQuestion = prompt('Hi ' + userName + ' , first question. Is Con Air a cinematic masterpiece?');
   while (movieQuestion.toLowerCase() !== 'yes'){
     alert('Come on ' + userName + ' put the bunny back in the box and select the right answer');
