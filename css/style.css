@@ -10,11 +10,11 @@ body {
 h1 {
   display: block;
   min-width: 500px; 
-  font-size: 3vh;
-  font-weight: 700;
-  color: rgb(39, 23, 187);
+  font-size: 7vh;
+  font-weight: bolder;
+  color: rgb(19, 4, 151);
   font-family: Comfortaa;
-  background-color: rgba(60, 153, 196, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -25,22 +25,23 @@ h1 {
   margin-right: auto;
   border-color: black;
   border: 5px solid black;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px, rgba(240, 46, 170, 0.4) -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
 }
 
 main {
   font-family: Comfortaa;
   font-size: 18px;
-  color: rgb(241, 205, 181);
+  color: rgb(255, 252, 250);
   font-weight: 500;
   display: block;
   padding: 2% 2% 2% 2%;
-  background-color: rgba(176, 16, 224, 0.9);
+  background-color: rgba(24, 20, 243, 0.9);
   border-radius: 10px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  border-color: black;
-  border: 5px solid black;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px, rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 p {

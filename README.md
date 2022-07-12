@@ -12,7 +12,10 @@ The goal of this project is to have a site that will serve as a brief overview o
 
 ### Links and resources
 Background image source
-[Vecteezy](https://www.vecteezy.com/free-vector/abstract-background)
+Font used [Google Font Comfortaa](https://fonts.google.com/specimen/Comfortaa)
+Background image [Freepik Vectors](https://www.freepik.com/vectors/polygon-shape)
+Presets for box-shadow CSS [box-shadow presets](https://getcssscan.com/css-box-shadow-examples)
+
 ### Reflections and Comments
 
 Consider including the answers to your daily journal and submission questions here
