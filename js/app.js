@@ -57,45 +57,50 @@ if(questionFive === 'y' || questionFive === 'yes'){
 }
 
 
-// Number Guessing Game
-let myNumber = 42;
-for(let i = 0; i<4; i++){
-  let userNumber = prompt('Guess a number between 1 and 100 ' + user);
-
-  if(userNumber === myNumber){
-    alert('You got it! That is amazing!');
+// Number Guessing Game using a random number generator
+let randomNum = (Math.floor(Math.random() * 10) + 1);
+console.log('the number is:', randomNum);
+for (let i = 0; i < 4; i++){
+  let userGuess = prompt(`Let's change it up ${user}. Guess a number from 1-10, you have four chances`);
+  userGuess = Number(userGuess);
+  if(randomNum === userGuess) {
+    alert('Whoa that is amazing, you got it!');
+    i = 4;
     score++;
-    break;
-  } else if (userNumber < myNumber){
-    alert('Too low, my number is bigger than that');
-  } else if (userNumber > myNumber){
-    alert('Too high, my number is smaller than that');
-  } else {
-    alert('Please use numbers');
+  }else if (i < 3) {
+    if(randomNum > userGuess){
+      alert(`Sorry but that's too low...try again ${user}!`);
+    }else {
+      alert(`Sorry but that's too high...try again${user}!`);
+    }
+  }else {
+    alert ('Nope you didn\'t guess it, good try though.');
   }
 }
 
 
-// Guessing game using array of favorite movies as potential answers
-const favMovies = ['The Rock', 'Con Air', 'Big Trouble in Little China', 'King Arthur', 'The Dark Night', 'Lord of the Rings trilogy', 'Hackers', 'Fast and the Furious', 'Crimson Tide', 'The Hunt For Red October'];
-//console.log('this is the current favorite movie array', favMovies);
+// // Guessing game using array of favorite movies as potential answers
 
-let movieGuess = prompt(`Hey ${user} can you guess one of my favorite movies? It shouldn't be too hard if you've been paying attention`).toLowerCase;
-//console.log('the user guessed my favorite movie was', movieGuess);
+let favMovies = ['The Rock', 'Con Air', 'Big Trouble in Little China', 'King Arthur', 'Lord of the Rings trilogy', 'Hackers', 'Crimson Tide', 'The Hunt For Red October'];
 
-// setting conditions for correct guess
-// I can't figure out how to stucture the array in the alert without using the .join() helper
+// // setting conditions for correct guess
+// // I can't figure out how to stucture the array in the alert without using the .join() helper
+
 let correctAnswer = false;
-for (let i = 0; i < favMovies.length; i++) {
-  if (movieGuess === favMovies[i]) {
-    alert('congratualations you got it! Here is the full list ' + favMovies);
-    correctAnswer = true;
-    score++;
-  } 
-  if (i === favMovies.length - 1 && !correctAnswer) {
-    alert('sorry you got it wrong, correct answers were: ' + favMovies);
+for (let i = 0; i < 6; i++) {
+  if(correctAnswer){
+    break;
+  } else {
+    let userMovieGuess = prompt('Guess one of my top 10 favorite movies, you have 6 chances to get this!');
+    for (let i = 0; i < favMovies.length; i++){
+      if (favMovies[i] === userMovieGuess){
+        alert(`That is one of my favorite movies ${user}!`);
+        score++
+        correctAnswer = true;
+        break;
+      }
+    }
   }
 }
-
 
 alert(`Thanks for taking my quiz ${user} your final score was ${score} out of 7`);
