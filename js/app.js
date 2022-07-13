@@ -95,7 +95,7 @@ for (let i = 0; i < 6; i++) {
     for (let i = 0; i < favMovies.length; i++){
       if (favMovies[i] === userMovieGuess){
         alert(`That is one of my favorite movies ${user}!`);
-        score++
+        score++;
         correctAnswer = true;
         break;
       }
