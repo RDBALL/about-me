@@ -8,24 +8,31 @@ body {
   min-height: 100vh;
 }
 
+header.stickyHeader{
+  position: fixed;
+  top: 0;
+  height: 15vh;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
 h1 {
   display: block;
   min-width: 500px; 
+  height: 8vh;
   font-size: 7vh;
   font-weight: bolder;
   color: rgb(218, 19, 174);
   font-family: Comfortaa;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 1vh .5vw;
   padding: 1% 2% 1% 2%;
-  width: fit-content;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  border-color: black;
-  border: 5px solid black;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
   box-shadow: rgba(5, 63, 255, 0.336) 0px 10px 20px 20px, rgba(255, 3, 200, 0.15) 0px 12px 6px 10px;
 }
 
@@ -36,9 +43,10 @@ main {
   font-weight: bolder;
   display: block;
   padding: 2% 2% 2% 2%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   max-width: 500px;
+  margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
   border: 5px solid rgba(255, 255, 255, .4);
@@ -47,6 +55,19 @@ main {
 
 p {
   padding: 1% 1% 1% 1%;
+}
+
+p.movieHeading {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
+
+ol {
+  margin: auto;
+  list-style-type: decimal;
+  padding: 10px 10px 10px 10px
 }
 
 .footer {
