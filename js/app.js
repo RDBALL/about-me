@@ -6,77 +6,33 @@ let score = 0;
 
 alert(`Welcome to my site ${user}! Take this short quiz and find out a little more about me`);
 
-question1();
-question2();
-question3();
-question4();
-question5();
+// The solution to this guessing game is modeled after Adrians code during the paired programming assignment.https://github.com/AdrianButler
+
+askQuestion(`Okay ${user} first question \nYes or No...\nDo I have a dog?`, true, 'That\'s right! I have three dogs','Sorry, that\'s wrong');
+askQuestion(`Second question ${user} \nYes or No...\nHave I traveled outside of the country?`, true, 'You are correct!','Sorry, that\'s wrong');
+askQuestion(`Alright ${user}, third question \nYes or No...\nHave I ever been in a rodeo?`, false, 'You got it! I have not been in a rodeo before','Sorry, even though I\'m from Montana I have not been in a rodeo');
+askQuestion(`Question four out of seven, almost done ${user}\nYes or No...\nDo I believe that the movie "Con Air" is a cinematic masterpiece?`, true, `You are absolutely right ${user}, Con Air is an amazing film`, 'Sorry, you got this one wrong and I\'m going to have to ask you to put the bunny back in the box');
+askQuestion(`Almost done ${user}\nYes or No...\nSpeaking of airplanes have I ever jumped out of one?`, true, `Correct ${user}! I can say that I have taken off in more planes than I have landed in`, 'I actually have multiple jumps!');
 question6();
 question7();
 
-
-function question1() {
-  let questionOne = prompt(`Okay ${user} first question \nYes or No...\nDo I have a dog?`).toLowerCase();
-  if(questionOne === 'y' || questionOne === 'yes'){
-    alert('That\'s right! I have three dogs');
+function askQuestion(question, answer, correctAnswerMessage, wrongAnswerMessage){
+  let userAnswer = prompt(question).toLowerCase();
+  if (userAnswer === 'n' || userAnswer === 'no'){
+    userAnswer = false;
+  } else if(userAnswer === 'y' || userAnswer === 'yes'){
+    userAnswer = true;
+  } else {
+    alert('Please answer yes or no');
+  } if (userAnswer === answer){
+    alert(correctAnswerMessage);
     score++;
-  } else if(questionOne === 'n' || questionOne === 'no'){
-    alert('Sorry, that\'s wrong');
-  } else{
-    alert ('Answer yes or no');
-  }
-}
-
-function question2() {
-  let questionTwo = prompt(`Second question ${user} \nYes or No...\nHave I traveled outside of the country?`).toLowerCase();
-  if(questionTwo === 'y' || questionTwo === 'yes'){
-    alert('You are correct!');
-    score++;
-  } else if(questionTwo === 'n' || questionTwo === 'no'){
-    alert('Sorry, that\'s wrong');
-  } else{
-    alert ('Answer yes or no');
-  }
-}
-
-function question3() {
-  let questionThree = prompt(`Alright ${user}, third question \nYes or No...\nHave I ever been in a rodeo?`).toLowerCase();
-  if(questionThree === 'y' || questionThree === 'yes'){
-    alert('Sorry, even though I\'m from Montana I have not been in a rodeo');
-  } else if(questionThree === 'n' || questionThree === 'no'){
-    alert('You got it! I have not been in a rodeo before');
-    score++;
-  } else{
-    alert ('Answer yes or no');
-  }
-}
-
-function question4() {
-  let questionFour = prompt(`Question four out of seven, almost done ${user}\nYes or No...\nDo I believe that the movie "Con Air" is a cinematic masterpiece?`).toLowerCase();
-  if(questionFour === 'y' || questionFour === 'yes'){
-    alert(`You are absolutely right ${user}, Con Air is an amazing film`);
-    score++;
-  } else if(questionFour === 'n' || questionFour === 'no'){
-    alert('Sorry, you got this one wrong and I\'m going to have to ask you to put the bunny back in the box');
-  } else{
-    alert ('Answer yes or no');
-  }
-}
-
-function question5() {
-  let questionFive = prompt(`Almost done ${user}\nYes or No...\nSpeaking of airplanes have I ever jumped out of one?`).toLowerCase();
-  if(questionFive === 'y' || questionFive === 'yes'){
-    alert(`Correct ${user}! I can say that I have taken off in more planes than I have landed in`);
-    score++;
-  } else if(questionFive === 'n' || questionFive === 'no'){
-    alert('I actually have multiple jumps!');
-  } else{
-    alert ('Answer yes or no');
+  }else {
+    alert(wrongAnswerMessage);
   }
 }
 
 function question6() {
-  // Number Guessing Game using a random number generator
   let randomNum = (Math.floor(Math.random() * 10) + 1);
   console.log('the number is:', randomNum);
   for (let i = 0; i < 4; i++){
@@ -99,13 +55,7 @@ function question6() {
 }
 
 function question7() {
-  // // Guessing game using array of favorite movies as potential answers
-
   let favMovies = ['the rock', 'con air', 'big trouble in little china', 'king arthur', 'lord of the rings trilogy', 'hackers', 'crimson tide', 'the fast and the furious', 'the hunt for red october'];
-
-// // setting conditions for correct guess
-// // I can't figure out how to stucture the array in the alert without using the .join() helper
-
   let correctAnswer = false;
   for (let i = 0; i < 6; i++) {
     if(correctAnswer){
@@ -120,10 +70,8 @@ function question7() {
           break;
         }
       }
-    }
-
-    if (i >= 5) {
-      alert(`Sorry, you are out of guesses. Here are the answers: ${favMovies}`);
+    } if (i >= 5) {
+      alert(`Sorry, ${user} you are out of guesses. Here are the answers:\nThe Rock\nCon Air\nBig Trouble in Little China\nKing Arthur\nLord of the Rings trilogy\nHackers\nBloodsport\nCrimson Tide\nThe Fast and the Furious\nThe Hunt for Red October`);
     }
   }
 }
