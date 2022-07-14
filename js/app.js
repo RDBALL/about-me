@@ -6,99 +6,124 @@ let score = 0;
 
 alert(`Welcome to my site ${user}! Take this short quiz and find out a little more about me`);
 
-let questionOne = prompt(`Okay ${user} first question \nYes or No...\nDo I have a dog?`).toLowerCase();
-if(questionOne === 'y' || questionOne === 'yes'){
-  alert('That\'s right! I have three dogs');
-  score++;
-} else if(questionOne === 'n' || questionOne === 'no'){
-  alert('Sorry, that\'s wrong');
-} else{
-  alert ('Answer yes or no');
-}
-
-let questionTwo = prompt(`Second question ${user} \nYes or No...\nHave I traveled outside of the country?`).toLowerCase();
-if(questionTwo === 'y' || questionTwo === 'yes'){
-  alert('You are correct!');
-  score++;
-} else if(questionTwo === 'n' || questionTwo === 'no'){
-  alert('Sorry, that\'s wrong');
-} else{
-  alert ('Answer yes or no');
-}
-
-let questionThree = prompt(`Alright ${user}, third question \nYes or No...\nHave I ever been in a rodeo?`).toLowerCase();
-if(questionThree === 'y' || questionThree === 'yes'){
-  alert('Sorry, even though I\'m from Montana I have not been in a rodeo');
-} else if(questionThree === 'n' || questionThree === 'no'){
-  alert('You got it! I have not been in a rodeo before');
-  score++;
-} else{
-  alert ('Answer yes or no');
-}
-
-let questionFour = prompt(`Question four out of seven, almost done ${user}\nYes or No...\nDo I believe that the movie "Con Air" is a cinematic masterpiece?`).toLowerCase();
-if(questionFour === 'y' || questionFour === 'yes'){
-  alert(`You are absolutely right ${user}, Con Air is an amazing film`);
-  score++;
-} else if(questionFour === 'n' || questionFour === 'no'){
-  alert('Sorry, you got this one wrong and I\'m going to have to ask you to put the bunny back in the box');
-} else{
-  alert ('Answer yes or no');
-}
-
-let questionFive = prompt(`Almost done ${user}\nYes or No...\nSpeaking of airplanes have I ever jumped out of one?`).toLowerCase();
-if(questionFive === 'y' || questionFive === 'yes'){
-  alert(`Correct ${user}! I can say that I have taken off in more planes than I have landed in`);
-  score++;
-} else if(questionFive === 'n' || questionFive === 'no'){
-  alert('I actually have multiple jumps!');
-} else{
-  alert ('Answer yes or no');
-}
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();
 
 
-// Number Guessing Game using a random number generator
-let randomNum = (Math.floor(Math.random() * 10) + 1);
-console.log('the number is:', randomNum);
-for (let i = 0; i < 4; i++){
-  let userGuess = prompt(`Let's change it up ${user}. Guess a number from 1-10, you have four chances`);
-  userGuess = Number(userGuess);
-  if(randomNum === userGuess) {
-    alert('Whoa that is amazing, you got it!');
+function question1() {
+  let questionOne = prompt(`Okay ${user} first question \nYes or No...\nDo I have a dog?`).toLowerCase();
+  if(questionOne === 'y' || questionOne === 'yes'){
+    alert('That\'s right! I have three dogs');
     score++;
-    break;
-  }else if (i < 3) {
-    if(randomNum > userGuess){
-      alert(`Sorry but that's too low...try again ${user}!`);
-    }else {
-      alert(`Sorry but that's too high...try again${user}!`);
-    }
-  }else {
-    alert ('Nope you didn\'t guess it, good try though.');
+  } else if(questionOne === 'n' || questionOne === 'no'){
+    alert('Sorry, that\'s wrong');
+  } else{
+    alert ('Answer yes or no');
   }
 }
 
+function question2() {
+  let questionTwo = prompt(`Second question ${user} \nYes or No...\nHave I traveled outside of the country?`).toLowerCase();
+  if(questionTwo === 'y' || questionTwo === 'yes'){
+    alert('You are correct!');
+    score++;
+  } else if(questionTwo === 'n' || questionTwo === 'no'){
+    alert('Sorry, that\'s wrong');
+  } else{
+    alert ('Answer yes or no');
+  }
+}
 
-// // Guessing game using array of favorite movies as potential answers
+function question3() {
+  let questionThree = prompt(`Alright ${user}, third question \nYes or No...\nHave I ever been in a rodeo?`).toLowerCase();
+  if(questionThree === 'y' || questionThree === 'yes'){
+    alert('Sorry, even though I\'m from Montana I have not been in a rodeo');
+  } else if(questionThree === 'n' || questionThree === 'no'){
+    alert('You got it! I have not been in a rodeo before');
+    score++;
+  } else{
+    alert ('Answer yes or no');
+  }
+}
 
-let favMovies = ['the rock', 'con air', 'big trouble in little china', 'king arthur', 'lord of the rings trilogy', 'hackers', 'crimson tide', 'the fast and the furious', 'the hunt for red october'];
+function question4() {
+  let questionFour = prompt(`Question four out of seven, almost done ${user}\nYes or No...\nDo I believe that the movie "Con Air" is a cinematic masterpiece?`).toLowerCase();
+  if(questionFour === 'y' || questionFour === 'yes'){
+    alert(`You are absolutely right ${user}, Con Air is an amazing film`);
+    score++;
+  } else if(questionFour === 'n' || questionFour === 'no'){
+    alert('Sorry, you got this one wrong and I\'m going to have to ask you to put the bunny back in the box');
+  } else{
+    alert ('Answer yes or no');
+  }
+}
+
+function question5() {
+  let questionFive = prompt(`Almost done ${user}\nYes or No...\nSpeaking of airplanes have I ever jumped out of one?`).toLowerCase();
+  if(questionFive === 'y' || questionFive === 'yes'){
+    alert(`Correct ${user}! I can say that I have taken off in more planes than I have landed in`);
+    score++;
+  } else if(questionFive === 'n' || questionFive === 'no'){
+    alert('I actually have multiple jumps!');
+  } else{
+    alert ('Answer yes or no');
+  }
+}
+
+function question6() {
+  // Number Guessing Game using a random number generator
+  let randomNum = (Math.floor(Math.random() * 10) + 1);
+  console.log('the number is:', randomNum);
+  for (let i = 0; i < 4; i++){
+    let userGuess = prompt(`Let's change it up ${user}. Guess a number from 1-10, you have four chances`);
+    userGuess = Number(userGuess);
+    if(randomNum === userGuess) {
+      alert('Whoa that is amazing, you got it!');
+      score++;
+      break;
+    }else if (i < 3) {
+      if(randomNum > userGuess){
+        alert(`Sorry but that's too low...try again ${user}!`);
+      }else {
+        alert(`Sorry but that's too high...try again${user}!`);
+      }
+    }else {
+      alert ('Nope you didn\'t guess it, good try though.');
+    }
+  }
+}
+
+function question7() {
+  // // Guessing game using array of favorite movies as potential answers
+
+  let favMovies = ['the rock', 'con air', 'big trouble in little china', 'king arthur', 'lord of the rings trilogy', 'hackers', 'crimson tide', 'the fast and the furious', 'the hunt for red october'];
 
 // // setting conditions for correct guess
 // // I can't figure out how to stucture the array in the alert without using the .join() helper
 
-let correctAnswer = false;
-for (let i = 0; i < 6; i++) {
-  if(correctAnswer){
-    break;
-  } else {
-    let userMovieGuess = prompt('Guess one of my top 10 favorite movies, you have 6 chances to get this!').toLowerCase();
-    for (let i = 0; i < favMovies.length; i++){
-      if (favMovies[i] === userMovieGuess){
-        alert(`That is one of my favorite movies ${user}, here is the whole list \nThe Rock\nCon Air\nBig Trouble in Little China\nKing Arthur\nLord of the Rings trilogy\nHackers\nBloodsport\nCrimson Tide\nThe Fast and the Furious\nThe Hunt for Red October`);
-        score++;
-        correctAnswer = true;
-        break;
+  let correctAnswer = false;
+  for (let i = 0; i < 6; i++) {
+    if(correctAnswer){
+      break;
+    } else {
+      let userMovieGuess = prompt('Guess one of my top 10 favorite movies, you have 6 chances to get this!').toLowerCase();
+      for (let j = 0; j < favMovies.length; j++){
+        if (favMovies[j] === userMovieGuess){
+          alert(`That is one of my favorite movies ${user}, here is the whole list \nThe Rock\nCon Air\nBig Trouble in Little China\nKing Arthur\nLord of the Rings trilogy\nHackers\nBloodsport\nCrimson Tide\nThe Fast and the Furious\nThe Hunt for Red October`);
+          score++;
+          correctAnswer = true;
+          break;
+        }
       }
+    }
+
+    if (i >= 5) {
+      alert(`Sorry, you are out of guesses. Here are the answers: ${favMovies}`);
     }
   }
 }
