@@ -150,6 +150,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
+class-app.js
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows,visualstudiocode

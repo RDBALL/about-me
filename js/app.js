@@ -65,8 +65,8 @@ for (let i = 0; i < 4; i++){
   userGuess = Number(userGuess);
   if(randomNum === userGuess) {
     alert('Whoa that is amazing, you got it!');
-    i = 4;
     score++;
+    break;
   }else if (i < 3) {
     if(randomNum > userGuess){
       alert(`Sorry but that's too low...try again ${user}!`);
