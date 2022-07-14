@@ -1,6 +1,6 @@
 # code201_class02
 
-## LAB - 02
+## LAB - 03
 
 ### About Me
 
@@ -17,4 +17,4 @@ Presets for box-shadow CSS [box-shadow presets](https://getcssscan.com/css-box-s
 
 ### Reflections and Comments
 
-What I should have done from the start is to get back to the basics and begin with a wireframe design.  At the moment there is not a lot of thought put into the overall design other than just meeting the requirements of the assignment.
+QuestionWhat I should have done from the start is to get back to the basics and begin with a wireframe design.  At the moment there is not a lot of thought put into the overall design other than just meeting the requirements of the assignment.
