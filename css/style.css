@@ -82,10 +82,17 @@ ul.li {
   margin-bottom: 10px;
 }
 
+/* This adds a bottom margin to li items as lon as it is not the last li from "https://stackoverflow.com/questions/11903773/add-space-between-li-elements" */
+li:not(:last-child) { 
+  margin-bottom: 5px;  
+}
+
 ol {
-  margin: auto;
   list-style-type: decimal;
   padding: 1em;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {

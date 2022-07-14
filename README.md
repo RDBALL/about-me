@@ -14,6 +14,7 @@ Background image source
 Font used [Google Font Comfortaa](https://fonts.google.com/specimen/Comfortaa)
 Background image [Freepik Vectors](https://www.freepik.com/vectors/polygon-shape)
 Presets for box-shadow CSS [box-shadow presets](https://getcssscan.com/css-box-shadow-examples)
+Adding a bottom margin to li elements [Stack Overflow](https://stackoverflow.com/questions/11903773/add-space-between-li-elements)
 
 ### Reflections and Comments
 
