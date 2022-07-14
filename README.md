@@ -18,4 +18,10 @@ Adding a bottom margin to li elements [Stack Overflow](https://stackoverflow.com
 
 ### Reflections and Comments
 
-QuestionWhat I should have done from the start is to get back to the basics and begin with a wireframe design.  At the moment there is not a lot of thought put into the overall design other than just meeting the requirements of the assignment.
+### Day 2
+
+- What I should have done from the start is to get back to the basics and begin with a wireframe design.  At the moment there is not a lot of thought put into the overall design other than just meeting the requirements of the assignment.
+
+### Day 3
+
+- I still need to spend some more time and energy understanding for loops and the benifit of using arrays within the context of this assignment.
