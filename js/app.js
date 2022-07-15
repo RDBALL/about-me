@@ -61,7 +61,7 @@ function question7() {
     if(correctAnswer){
       break;
     } else {
-      let userMovieGuess = prompt('Guess one of my top 10 favorite movies, you have 6 chances to get this!').toLowerCase();
+      let userMovieGuess = prompt('Guess one of my top 10 favorite movies, you have 6 guesses.\nGuess # ' + (i+1) + '.').toLowerCase();
       for (let j = 0; j < favMovies.length; j++){
         if (favMovies[j] === userMovieGuess){
           alert(`That is one of my favorite movies ${user}, here is the whole list \nThe Rock\nCon Air\nBig Trouble in Little China\nKing Arthur\nLord of the Rings trilogy\nHackers\nBloodsport\nCrimson Tide\nThe Fast and the Furious\nThe Hunt for Red October`);
