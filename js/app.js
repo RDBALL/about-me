@@ -6,8 +6,6 @@ let score = 0;
 
 alert(`Welcome to my site ${user}! Take this short quiz and find out a little more about me`);
 
-// The solution to this guessing game is modeled after Adrians code during the paired programming assignment.https://github.com/AdrianButler
-
 askQuestion(`Okay ${user} first question \nYes or No...\nDo I have a dog?`, true, 'That\'s right! I have three dogs','Sorry, that\'s wrong');
 askQuestion(`Second question ${user} \nYes or No...\nHave I traveled outside of the country?`, true, 'You are correct!','Sorry, that\'s wrong');
 askQuestion(`Alright ${user}, third question \nYes or No...\nHave I ever been in a rodeo?`, false, 'You got it! I have not been in a rodeo before','Sorry, even though I\'m from Montana I have not been in a rodeo');

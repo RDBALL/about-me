@@ -25,3 +25,7 @@ Adding a bottom margin to li elements [Stack Overflow](https://stackoverflow.com
 ### Day 3
 
 - I still need to spend some more time and energy understanding for loops and the benifit of using arrays within the context of this assignment.
+
+### Day 4
+
+- The JavaScript solution to this guessing game is modeled after Adrians code during the paired programming assignment. https://github.com/AdrianButler
